@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
-  "name": "1e08b2b86996b393c809",
+  "name": "510c8fff2a936a8438a4",
   "position": {
-    "x": 43.333333333333336,
-    "y": 162.22222222222223,
-    "z": 4000,
-    "height": 138.88888888888889,
-    "width": 185.55555555555554,
-    "tabOrder": 6000
+    "x": 44.444444444444443,
+    "y": 322.22222222222223,
+    "z": 9000,
+    "height": 140,
+    "width": 184.44444444444443,
+    "tabOrder": 9000
   },
   "visual": {
     "visualType": "card",
@@ -23,10 +23,11 @@
                       "Entity": "Sales"
                     }
                   },
-                  "Property": "VanArsdel Market Share"
+                  "Property": "% Growth"
                 }
               },
-              "queryRef": "Sales.VanArsdel Share"
+              "queryRef": "Sales.% Growth",
+              "nativeQueryRef": "% Growth"
             }
           ]
         }
@@ -41,12 +42,13 @@
                     "Entity": "Sales"
                   }
                 },
-                "Property": "VanArsdel Market Share"
+                "Property": "% Growth"
               }
             },
             "direction": "Descending"
           }
-        ]
+        ],
+        "isDefaultSort": true
       }
     },
     "objects": {
@@ -96,7 +98,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'VanArsdel Market Share'"
+                  "Value": "'% Growth'"
                 }
               }
             }
@@ -118,5 +120,23 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "e4834d000006ae13ba88",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Sales"
+              }
+            },
+            "Property": "% Growth"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }

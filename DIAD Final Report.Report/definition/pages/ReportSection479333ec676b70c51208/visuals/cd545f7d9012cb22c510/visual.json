@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
   "name": "cd545f7d9012cb22c510",
   "position": {
-    "x": 39.814571355352335,
-    "y": 379.07284768211917,
+    "x": 40,
+    "y": 481.11111111111109,
     "z": 5000,
-    "height": 150.9139145604822,
-    "width": 192.63575977047546,
+    "height": 151.11111111111111,
+    "width": 192.22222222222223,
     "tabOrder": 7000
   },
   "visual": {
@@ -181,5 +181,37 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "355f0d086391e25199e7",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Sales"
+              }
+            },
+            "Property": "% Growth"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "d159ea2eea3ddd663c21",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Manufacturer"
+              }
+            },
+            "Property": "Manufacturer"
+          }
+        },
+        "type": "Categorical"
+      }
+    ]
   }
 }

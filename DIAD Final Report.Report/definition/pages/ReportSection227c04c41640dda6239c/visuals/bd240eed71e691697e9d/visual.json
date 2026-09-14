@@ -55,23 +55,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "a8f4592128eb458ea5d4",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Geography"
-              }
-            },
-            "Property": "Country"
-          }
-        },
-        "type": "Categorical"
-      }
-    ]
   }
 }
